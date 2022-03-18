@@ -1,15 +1,15 @@
 {
-  "name": "serum-vial",
+  "name": "safely-vial",
   "version": "1.7.0",
   "engines": {
     "node": ">=15"
   },
-  "description": "Real-time WebSocket market data API server for Serum DEX",
+  "description": "Real-time WebSocket market data API server for Safely DEX",
   "main": "dist/index.js",
   "source": "src/index.js",
   "types": "dist/index.d.ts",
-  "repository": "tardis-dev/serum-vial",
-  "homepage": "https://github.com/tardis-dev/serum-vial",
+  "repository": "safely-project/safely-vial",
+  "homepage": "https://github.com/safely-project/safely-vial.git",
   "scripts": {
     "build": "tsc",
     "precommit": "lint-staged",
@@ -38,7 +38,6 @@
   ],
   "license": "MPL-2.0",
   "dependencies": {
-    "@blockworks-foundation/mango-client": "^3.3.18",
     "@project-serum/serum": "^0.13.61",
     "@solana/web3.js": "^1.36.0",
     "@types/bintrees": "^1.0.3",

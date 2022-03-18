@@ -1,4 +1,4 @@
-import { Config } from '@blockworks-foundation/mango-client'
+//import { Config } from '@blockworks-foundation/mango-client'
 import { MARKETS as DEFAULT_SERUM_MARKETS } from '@project-serum/serum'
 import didYouMean from 'didyoumean2'
 import { SerumMarket } from './types'
@@ -112,7 +112,7 @@ export async function executeAndRetry<T>(
   }
 }
 
-export function getMangoSpotMarkets(): SerumMarket[] {
+/*export function getMangoSpotMarkets(): SerumMarket[] {
   const mangoGroupConfig = Config.ids().groups.filter((group) => group.name === 'mainnet.1')[0]!
 
   return mangoGroupConfig.spotMarkets.map((market) => {
@@ -123,7 +123,7 @@ export function getMangoSpotMarkets(): SerumMarket[] {
       deprecated: false
     }
   })
-}
+}*/
 export function getDefaultMarkets(): SerumMarket[] {
   const defaultMarkets: SerumMarket[] = []
 
@@ -143,13 +143,13 @@ export function getDefaultMarkets(): SerumMarket[] {
       deprecated: false
     })
   }
-  for (const mangoSpotMarket of getMangoSpotMarkets()) {
+  /*for (const mangoSpotMarket of getMangoSpotMarkets()) {
     if (defaultMarkets.some((s) => s.name === mangoSpotMarket.name)) {
       continue
     }
 
     defaultMarkets.push(mangoSpotMarket)
-  }
+  }*/
 
   return defaultMarkets
 }
