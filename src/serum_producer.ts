@@ -1,5 +1,5 @@
-import { Market } from '@project-serum/serum'
-import { PublicKey } from '@solana/web3.js'
+import { Market } from '@safely-project/serum'
+import { PublicKey } from '@safecoin/web3.js'
 import { isMainThread, workerData } from 'worker_threads'
 import { MessageType } from './consts'
 import { DataMapper } from './data_mapper'

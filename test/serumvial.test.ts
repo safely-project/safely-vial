@@ -20,14 +20,14 @@ describe('serum-vial', () => {
       commitment: 'confirmed',
       markets: [
         {
-          address: 'HWHvQhFmJB3NUcu1aihKmrKegfVxBEHzwVX6yZCKEsi1',
+          address: '3VdA6xZiiSp8vheGz987T3qokLW7tHPdikebjpVMHhgw',
           deprecated: false,
-          name: 'SOL/USDT',
-          programId: '9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'
+          name: 'BOZO/OZOB',
+          programId: 'SsdxNC41napUG4AeUrU9ciNGNEMdxrGR9tLFE9i2WNa'
         }
       ],
       minionsCount: 1,
-      nodeEndpoint: 'https://solana-api.projectserum.com',
+      nodeEndpoint: 'https://api.devnet.safecoin.org',
       wsEndpointPort: undefined,
       bootDelay: 0
     })
@@ -129,6 +129,7 @@ describe('serum-vial', () => {
   test(
     'WS level2 data stream',
     async () => {
+      console.log("lol")
       const wsClient = new SimpleWebsocketClient(WS_ENDPOINT)
       const markets = await fetchMarkets()
       let receivedSubscribed = false
@@ -146,6 +147,7 @@ describe('serum-vial', () => {
       for await (const message of wsClient.stream()) {
         if (message.type === 'subscribed') {
           receivedSubscribed = true
+          console.log("qsdqsd", receivedSubscribed)
         }
 
         if (message.type === 'l2snapshot') {

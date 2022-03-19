@@ -1,5 +1,5 @@
 //import { Config } from '@blockworks-foundation/mango-client'
-import { MARKETS as DEFAULT_SERUM_MARKETS } from '@project-serum/serum'
+import { MARKETS as DEFAULT_SERUM_MARKETS } from './clib/tokens_and_markets'
 import didYouMean from 'didyoumean2'
 import { SerumMarket } from './types'
 

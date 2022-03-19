@@ -6,7 +6,7 @@ const isDocker = require('is-docker')
 const pkg = require('../package.json')
 
 const DEFAULT_PORT = 8000
-const DEFAULT_NODE_ENDPOINT = 'https://solana-api.projectserum.com'
+const DEFAULT_NODE_ENDPOINT = 'https://api.devnet.safecoin.org'
 
 const argv = yargs
   .scriptName('serum-vial')

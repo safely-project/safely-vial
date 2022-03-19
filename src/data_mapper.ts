@@ -1,6 +1,6 @@
-import { EVENT_QUEUE_LAYOUT, Market, Orderbook, getLayoutVersion } from '@project-serum/serum'
-import { Event } from '@project-serum/serum/lib/queue'
-import { PublicKey } from '@solana/web3.js'
+import { EVENT_QUEUE_LAYOUT, Market, Orderbook, getLayoutVersion } from '@safely-project/serum'
+import { Event } from '@safely-project/serum/lib/queue'
+import { PublicKey } from '@safecoin/web3.js'
 import BN from 'bn.js'
 import { CircularBuffer } from './helpers'
 import { logger } from './logger'
@@ -389,7 +389,8 @@ export class DataMapper {
             timestamp,
             trades: [...this._recentTrades.items()]
           }
-
+          logger.log('warn', 'Maker fill without open message', recentTradesMessage.trades )
+          console.log("recent trade", recentTradesMessage)
           yield this._putInEnvelope(recentTradesMessage, false)
         }
       }

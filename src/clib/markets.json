@@ -1,0 +1,16 @@
+[
+  {
+    "address": "3VdA6xZiiSp8vheGz987T3qokLW7tHPdikebjpVMHhgw",
+    "name": "BOZO/OZOB",
+    "programId": "SsdxNC41napUG4AeUrU9ciNGNEMdxrGR9tLFE9i2WNa",
+    "owner": "CmEtCf1pm6qgXsa73Kxr2do2ikYyAC9d2HJ7RQf5WE2m",
+    "deprecated": false
+  },
+  {
+    "address": "Ft8Mgdjpmn2ssngUJ35t5cMiWAyyx3KDUSkLFyZjzJsR",
+    "name": "SEVEN/ARA",
+    "programId": "SsdxNC41napUG4AeUrU9ciNGNEMdxrGR9tLFE9i2WNa",
+    "owner": "CmEtCf1pm6qgXsa73Kxr2do2ikYyAC9d2HJ7RQf5WE2m",
+    "deprecated": true
+  }
+]

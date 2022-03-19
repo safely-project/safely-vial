@@ -1,5 +1,5 @@
-import { getLayoutVersion, Market } from '@project-serum/serum'
-import { Connection, PublicKey } from '@solana/web3.js'
+import { getLayoutVersion, Market } from '@safely-project/serum'
+import { Connection, PublicKey } from '@safecoin/web3.js'
 import { App, HttpResponse, DISABLED, SSLApp, TemplatedApp, us_listen_socket_close, WebSocket } from 'uWebSockets.js'
 import { isMainThread, threadId, workerData } from 'worker_threads'
 import { CHANNELS, MESSAGE_TYPES_PER_CHANNEL, OPS } from './consts'

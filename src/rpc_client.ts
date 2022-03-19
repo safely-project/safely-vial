@@ -1,5 +1,5 @@
-import { Market } from '@project-serum/serum'
-import { AccountInfo, Commitment, PublicKey } from '@solana/web3.js'
+import { Market } from '@safely-project/serum'
+import { AccountInfo, Commitment, PublicKey } from '@safecoin/web3.js'
 import AbortController from 'abort-controller'
 import fetch from 'node-fetch'
 import { PassThrough } from 'stream'
